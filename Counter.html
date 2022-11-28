@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <!-- Title of the webpage -->
+        <title>Counter</title>
+
+        <!-- css: styling the webpage -->
+        <style>
+            body{
+                background-color:darkcyan;
+            }
+            button{
+                background-color:orange;
+                color:white;
+            }
+        </style>
+        <!-- Javascript : handling web programming -->
+        <script>
+            function Counter(){
+                let previousValue=document.getElementById("#number").value;
+                previousValue=parseInt(previousValue);//===>NaN
+                let currentValue=previousValue+1;
+
+                // document.getElementById("#result").innerHTML=currentValue;
+                document.getElementById("#number").value=currentValue;
+            }
+        </script>
+    
+    </head>
+
+    <body>
+
+        <!-- Text filed : enter values -->
+        <input id="#number" type="number" placeholder="Enter any number" 
+        />
+
+        <!-- <input id="#button" type="button" value="Click Me" 
+        onclick="alert('You clicked Me');" /> -->
+        
+        <!-- Button displaying welcome message -->
+        <button onClick="Counter();" >Add one</button>
+
+        <!-- <label id="#result">0</label> -->
+        
+    </body>
+</html>
